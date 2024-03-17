@@ -36,6 +36,21 @@ section:nth-child(even) {
   background: var(--thirdly);
 }
 
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -49,7 +64,6 @@ section:nth-child(even) {
 
 .btn:hover {
   background: var(--primary);
-  letter-spacing: 0.1rem;
 }
 
 /* ----- Navbar Style Start ----- */
@@ -209,6 +223,7 @@ header .icons #menu-bars {
 }
 
 .home .home-slider .slide p {
+  max-width: 550px;
   color: var(--secondary);
   font-size: 2.2rem;
   padding: 0.5rem 0;
@@ -219,6 +234,87 @@ header .icons #menu-bars {
   display: none;
 }
 /* ----- Home Slider End ----- */
+
+/* Dishes Section Start */
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye {
+  position: absolute;
+  top: 1.5rem;
+  background: var(--thirdly);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.dishes .box-container .box .fa-heart {
+  right: -15rem;
+}
+
+.dishes .box-container .box .fa-eye {
+  left: -15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart {
+  right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye {
+  left: 1.5rem;
+}
+
+.dishes .box-container .box img {
+  height: 17rem;
+  margin: 1rem 0;
+}
+
+.dishes .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars {
+  padding: 1rem 0;
+}
+
+.dishes .box-container .box i {
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+.dishes .box-container .box span {
+  color: var(--primary);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+/* Dishes Section End */
 
 /*---------- Media Queries Start ---------- */
 @media (max-width: 991px) {
@@ -275,6 +371,10 @@ header .icons #menu-bars {
 
   .home .home-slider .slide h3 {
     font-size: 5rem;
+  }
+  .dishes .box-container .box img {
+    height: auto;
+    width: 100%;
   }
 }
 /*---------- Media Queries End ---------- */
