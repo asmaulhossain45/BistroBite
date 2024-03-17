@@ -12,9 +12,14 @@
       referrerpolicy="no-referrer"
     />
     <!-- Font Awesome Cdn Link End -->
+    <link rel="shortcut icon" href="/Images/FavIcon.png" type="image/x-icon" />
 
     <!-- Custom Css Link Start -->
     <link rel="stylesheet" href="./Styles/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Custom Css Link End -->
   </head>
   <body>
@@ -56,7 +61,63 @@
     </form>
     <!-- Search Form End -->
 
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <!-- Slide one -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our Special Dish</span>
+              <h3>Spicy Noodles</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                cum similique libero.
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="./Images/Slide1.png" alt="Spicy Noodles" />
+            </div>
+          </div>
+          <!-- Slide two -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our Special Dish</span>
+              <h3>Fried Chicken</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                cum similique libero.
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="./Images/Slide2.png" alt="Fried Chicken" />
+            </div>
+          </div>
+          <!-- Slide three -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Our Special Dish</span>
+              <h3>Hot pizza</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                cum similique libero.
+              </p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="./Images/Slide3.png" alt="Hot pizza" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
     <!-- Script Start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./Scripts/Script.js"></script>
     <!-- Script End -->
   </body>
