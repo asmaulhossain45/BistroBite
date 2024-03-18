@@ -459,6 +459,57 @@ header .icons #menu-bars {
 }
 /* Menu Section End */
 
+/* Reviews Section Start */
+.reviews .slide {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.reviews .slide .fa-quote-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: var(--thirdly);
+}
+
+.reviews .slide .user {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.reviews .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--thirdly);
+  object-fit: cover;
+}
+
+.reviews .slide .user h3 {
+  color: var(--black);
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.reviews .slide .user i {
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.reviews .slide p {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Reviews Section End */
+
 /*---------- Media Queries Start ---------- */
 @media (max-width: 991px) {
   html {
