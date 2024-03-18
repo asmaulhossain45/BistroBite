@@ -1,14 +1,14 @@
-## Project Name: BistroBite - Restaurant
+### BistroBite - Restaurant
 
 ### Live Link:
-[Live Project]([http://www.example.com](https://bistro-bite.vercel.app/))
+[Live Project](https://bistro-bite.vercel.app/)
 
-### Technologies Used:
+## Technologies Used:
 - HTML
 - CSS
 - JavaScript
-- 
-### Project Images:
+
+## Project Images:
 
 1. ![Desktop View](https://raw.githubusercontent.com/asmaulhossain45/BistroBite/main/Images/BistroBite%20Laptop.png)
 2. ![Tablet View](https://raw.githubusercontent.com/asmaulhossain45/BistroBite/main/Images/BistroBite%20Tablet.png)
